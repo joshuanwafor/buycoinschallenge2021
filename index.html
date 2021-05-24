@@ -122,6 +122,7 @@
         async function findUser() {
             // check if user exists
             let result = await getUserData(input.value);
+            console.log(result)
             if (result.data.search.nodes[0] == undefined || result.data.search.nodes[0].id == undefined) {
                 // return
                 alert("User does not exist")

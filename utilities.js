@@ -40,11 +40,12 @@ function renderRepoComponent(data) {
 
 //Retrieves user's data from github graphapi
 async function getUserData(username) {
+    console.log(username)
     const graphURL = "https://api.github.com/graphql";
     const query = JSON.stringify({
         query: `
         {
-            search(type: USER, query: "${username}", first: 1) {
+            search(type: USER, query: "${username??'joshuanwafor'}", first: 1) {
               nodes {
                 ... on User {
                   id
@@ -80,7 +81,8 @@ async function getUserData(username) {
     let response = await fetch(graphURL, {
         method: "POST",
         headers: {
-            "Authorization": "bearer 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",
+            "Authorization": "bearer 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"
+            
         },
         body: query
     })

@@ -1,11 +1,11 @@
 body{
   background: ghostwhite;
+  overflow: auto;
 }
 .avartar {
   width: 100%;
   height:100%;
   position:relative;
-  background: red;
   border-radius: 50%;
   display: inline-block;
 }
