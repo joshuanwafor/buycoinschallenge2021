@@ -1,0 +1,187 @@
+body{
+  background: ghostwhite;
+}
+.avartar {
+  width: 100%;
+  height:100%;
+  position:relative;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+.mainAvartar{
+  width: 220px;
+  height: 220px;
+}
+.icon{
+  padding: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.btn-plain{
+  margin-left:12px; margin-right:12px;
+}
+
+
+.btn{
+  padding:12px;
+}
+
+body {
+  margin: 0;
+}
+
+#image{
+  border-radius:400px;
+  border:1px solid grey;
+  width:260px;
+  height:260px;
+}
+
+
+/* Sections */
+#header {
+  padding: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white !important;
+  fill:white;
+  align-items: center;
+  justify-items: space-between;
+  justify-content: space-between;
+}
+
+#header > * {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+/*  Input */
+
+input,
+.fancy-input {
+  border-radius: 5px;
+  padding: 6px;
+  /* font-size: 8px; */
+  border: 1px solid rgba(200,200,200,.5);;
+  outline: none;
+  background-color: transparent;
+  color: grey;
+  position: relative;
+  display: block;
+}
+input:focus{
+  border: 1.5px solid #21262d;
+}
+
+
+button{
+  padding:4px 8px;
+  outline: none;
+  border: 1px solid rgba(200,200,200,.5);
+  background-color: ghostwhite;
+  border-radius: 8px;;
+}
+
+#primary-nav{
+  display:flex;
+  flex:1;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar {
+  padding-bottom:24px;
+  padding-top:24px;
+  flex-direction: column;
+  display: flex;
+}
+
+#sidebar > *{
+  margin-top:12px;
+  margin-bottom:12px;
+}
+
+#content {
+  flex: 1;
+}
+
+#sidebar,
+#content {
+  padding: 24px;
+  
+}
+
+.repo{
+  padding-top: 24px;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-bottom: 24px;
+  border-bottom: .5px solid rgba(200,200,200,.5);
+}
+.repo > :first-child{
+  width: 65%;
+}
+
+#findCard{
+  width:200px;
+  padding:24px;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 36px;
+  align-content: center;
+  height: 80vh;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+  #container{
+    padding-left: 36px;
+    padding-right: 36px;
+    position: relative;
+    margin: auto;
+  }
+}
+
+/* About Medium */
+@media only screen and (min-width: 757px) {
+  .mobile{
+    display: none;
+  }
+}
+/* Medium */
+@media only screen and (max-width: 757px) {
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+    justify-content: space-between;
+  }
+  #container{
+    flex-direction: column;
+  }
+  #container > #sidebar{
+   flex-direction: row;
+  }
+  #sidebar > :last-child{
+    margin-left: 16px;
+  }
+  .repo > :first-child{
+    width: fit-content;
+  }
+  .mainAvartar{
+  width: 60px;
+  height: 60px;
+}
+
+}
