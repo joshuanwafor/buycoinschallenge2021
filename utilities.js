@@ -12,6 +12,7 @@ function renderBodyComponent(data) {
         innerHTML = innerHTML.replace(`{${key}}`, value);
     }
     // replace body with properly rendered HTML.
+    
     element.innerHTML = innerHTML;
   }
   
