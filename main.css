@@ -113,7 +113,6 @@ button{
 #sidebar,
 #content {
   padding: 24px;
-  
 }
 
 .repo{
@@ -170,6 +169,9 @@ button{
   #container{
     flex-direction: column;
   }
+  #content {
+    padding: 12px;
+  }
   #container > #sidebar{
    flex-direction: row;
   }
@@ -183,5 +185,8 @@ button{
   width: 60px;
   height: 60px;
 }
+   .hidden-small{
+     display: none;
+   }
 
 }
