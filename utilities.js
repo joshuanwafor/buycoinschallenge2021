@@ -28,8 +28,6 @@ function renderRepoComponent(data) {
     let innerHTML = element.innerHTML;
 
     for (const [key, value] of Object.entries(data)) {
-        console.log(key)
-        console.log(value)
         innerHTML = innerHTML.replace(`{${key}}`, value??"Empty string");
     }
 
