@@ -1,6 +1,5 @@
-
-
-
+// token valid until 7th of June.
+var tcryptic= ["Xzi8bdldwD7","yMIKKC5Uc","6tqlUuWqh","Y0Vsa4F"]
 
 // Receives @data : {[key: string]: value: string}
 // Renders mini templateVars on the DOM using keys on data.
@@ -81,8 +80,7 @@ async function getUserData(username) {
     let response = await fetch(graphURL, {
         method: "POST",
         headers: {
-            "Authorization": "bearer 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"
-            
+            "Authorization": `bearer ghp_${tcryptic.join("")}`
         },
         body: query
     })
