@@ -194,5 +194,7 @@ button{
 }
 
 @media only screen and (max-width: 400px) {
-  
+  .btn{
+    padding: 12px;
+  }
 }
